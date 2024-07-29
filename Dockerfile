@@ -9,3 +9,10 @@ COPY target/desafio-projeto-0.0.1-SNAPSHOT.jar app.jar
 
 # Defina o ponto de entrada para a aplicação
 ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/desafio-projeto-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+
