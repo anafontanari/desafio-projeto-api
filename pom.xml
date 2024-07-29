@@ -67,14 +67,11 @@
 			<version>4.8.113</version> <!-- Atualize para a versão recomendada -->
 		</dependency>
 		<dependency>
-			<groupId>postgresql</groupId> <artifactId>postgresql</artifactId>
-			<version>9.1-901.jdbc4</version>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.5.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.10</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
